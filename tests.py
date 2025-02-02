@@ -105,3 +105,11 @@ class TestBooksCollector:
         collector.add_new_book('')
 
         assert len(collector.get_books_genre()) == 0
+
+    def test_add_new_book_add_book_with_name_42_len(self):
+
+        collector = BooksCollector()
+
+        collector.add_new_book('abcdendkjfdifjefsdijfiejfuijndiurfnnvjndfi')
+
+        assert len(collector.get_books_genre()) == 0
